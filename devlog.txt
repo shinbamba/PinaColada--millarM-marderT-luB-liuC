@@ -1,0 +1,9 @@
+DEVLOG
+Pina Colada
+
+Entry Format:
+
+topherM -- 1999-12-31 23:59
+*** entry here ***
+
+Entries:
