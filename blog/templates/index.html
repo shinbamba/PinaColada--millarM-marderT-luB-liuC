@@ -9,9 +9,10 @@
   </head>
   <body>
     {% block search %}
+        <a href="/mypage"> My Page </a>
 	<form action="/search">
 	  <input type="text" name="query">
-	  <input type="submit" value="Search for an Entry">
+	  <input type="submit" value="Search for a User">
 	</form>
 	{% endblock %}
     {% with messages = get_flashed_messages() %}
@@ -23,16 +24,11 @@
     </ul>
     {% endif %}
     {% endwith %}
-    {% if username != 'notlogged' %}
     {% block body %}
     <h1>Welcome, {{username}}!</h1>
     <h3>What would you like to do?</h3>
-    <a href="/add"> Add a new Entry </a>
+    <a href="/add"> Make a new post</a>
     <p><a href="/logout">Logout</a></P>
     {% endblock %}
-    {% else %}
-	<h1> Welcome, User. </h1>
-	<a href="/login">Login</a>
-	{% endif %}
   </body>
   </html>
