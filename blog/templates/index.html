@@ -29,6 +29,12 @@
     <h3>What would you like to do?</h3>
     <a href="/add"> Make a new post</a>
     <p><a href="/logout">Logout</a></P>
+    {% for n in range(length) %}
+    {% set url = "/user/" + users[length - n - 1][0] + "/" + ids[length - n - 1][0]|string %}
+    <h1> <a href={{url}}> {{titles[length - n - 1][0]}} - #{{ids[length - n - 1][0]}} </a> </h1>
+    <h2> By {{users[length - n - 1][0]}} </h2>
+    <h3> {{bodies[length - n - 1][0]}} </h3>
+    {% endfor %}
     {% endblock %}
   </body>
   </html>

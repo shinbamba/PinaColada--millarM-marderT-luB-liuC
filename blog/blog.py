@@ -18,8 +18,28 @@ def render_test():
     else:
         return redirect("/login")
     #print(username)
-    return render_template("index.html", username=username)
-    
+    #try:
+    db = sqlite3.connect(DB_FILE)
+    c = db.cursor()
+    #print(user)
+    #print("SELECT title FROM blog where username='" + user + "';")
+    c.execute("SELECT title FROM blog;")
+    titles = c.fetchall()
+    c.execute("SELECT body FROM blog;")
+    bodies = c.fetchall()
+    c.execute("SELECT post_id FROM blog;")
+    ids = c.fetchall()
+    c.execute("SELECT username FROM blog;")
+    users= c.fetchall()
+    db.commit()
+    db.close()
+    #print(bodies)
+    length = len(titles)
+    return render_template("index.html", username=username, titles=titles, bodies=bodies, ids=ids, length=length, users=users)
+    '''except:
+        flash("Big error.")
+        return redirect("/")
+    '''
 @app.route('/login')
 def login():
     #print('user' in session)
@@ -62,6 +82,41 @@ def logout():
     session.pop('user')
     flash("Successfully logged out")
     return redirect("/login")
+
+@app.route('/register')
+def register():
+    if 'user' in session:
+        flash("You must log out to create a new account.")
+        return redirect("/")
+    return render_template("register.html")
+
+@app.route('/makereg')
+def makereg():
+    if 'user' in session:
+        flash("You must log out to create a new account.")
+        return redirect("/")
+    u_name = request.args.get("username")
+    u_pass = request.args.get("password")
+    if u_name == None or u_pass == None:
+        return redirect("/")
+    db = sqlite3.connect(DB_FILE)
+    c = db.cursor()
+    c.execute("SELECT username FROM login WHERE username='" + str(u_name) + "';")
+    check_u = c.fetchall()
+    #print(check_u)
+    #print(u_name)
+    if check_u != []:
+        db.commit()
+        db.close()
+        flash("Username taken.")
+        return redirect("/login")
+    else:
+        c.execute("INSERT INTO login VALUES('" + str(u_name) + "', '" + str(u_pass) + "');")
+        db.commit()
+        db.close()
+        session['user'] = u_name
+        flash("Account successfully created!")
+        return redirect("/")
 
 @app.route('/user/<user>')
 def dispUser(user):
