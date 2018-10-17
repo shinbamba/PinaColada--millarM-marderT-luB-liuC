@@ -31,4 +31,12 @@ tie posts to their respected blogs.
 near the post title.
 - Added explanations for each table and of their usage.
 
+boL -- 2018-10-16 21:55
+-fixed wording on what we meant when referencing tables
+-changed search to search/view to better reflect what the component does
+-removed the bit about sqlite databases, because it doesn't belong in components
+-explained the displaying posts part 
+-removed line referencing the need to be logged in because its redundant 
+
+
 ================================================
