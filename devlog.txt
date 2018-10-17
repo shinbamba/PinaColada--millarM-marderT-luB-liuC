@@ -1,4 +1,4 @@
-Team Pina Colada
+﻿Team Pina Colada
 Tim Marder, Max Millar, Bo Hui Lu, Claire Liu
 SoftDev Pd.6
 P #00: Da Art of Storytellin'
@@ -7,15 +7,12 @@ P #00: Da Art of Storytellin'
 
 PinaColada -- 2018-10-16 21:30
 Things we shall do to make things awesome:
-
 1) Use the simplest code we know of to perform each of our task. This will 
 prevent unnecessary confusion, and help our eyes.
-
 2) Instead of falling for the temptation to just produce code that barely 
 works in that situation, we will make sure to test our code thoroughly. Unlike
 the internet which is barely held together, we will make sure our code will be 
 robust. 
-
 3) We will continue to use and write "Good Code" except ours include team 
 collaboration. This will be done by intensively scrutinizing each of our 
 functions to make sure everything could be understood by orangutans.
@@ -39,6 +36,10 @@ boL -- 2018-10-16 21:55
 -removed line referencing the need to be logged in because its redundant 
 
 claireL -- 2018-10-16 23:55
-Something else we can do to write good code is to communicate and set clear deadlines. The project manager will coordinate and make sure that deadlines for each obstacle is established so we aren’t rushing to add all the components together at the very last minute. Multiple deadlines for smaller tasks is key to make sure the final version is comprehensive and on time. 
+Something else we can do to write good code is to communicate and set clear
+deadlines. The project manager will coordinate and make sure that deadlines for
+each obstacle is established so we aren’t rushing to add all the components together
+at the very last minute. Multiple deadlines for smaller tasks is key to make sure the 
+final version is comprehensive and on time. 
 
 ================================================
