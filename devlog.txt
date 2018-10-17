@@ -17,6 +17,8 @@ robust.
 collaboration. This will be done by intensively scrutinizing each of our 
 functions to make sure everything could be understood by orangutans.
 
+--------------------------------------------------------------
+
 timM -- 2018-10-16 21:51
 - Completely re-drew the database schema for clearer representation.
 - Added a third table since task was slightly misunderstood at first. Blogs
@@ -28,12 +30,16 @@ tie posts to their respected blogs.
 near the post title.
 - Added explanations for each table and of their usage.
 
+--------------------------------------------------------------
+
 boL -- 2018-10-16 21:55
 -fixed wording on what we meant when referencing tables
 -changed search to search/view to better reflect what the component does
 -removed the bit about sqlite databases, because it doesn't belong in components
 -explained the displaying posts part 
 -removed line referencing the need to be logged in because its redundant 
+
+--------------------------------------------------------------
 
 claireL -- 2018-10-16 23:55
 Something else we can do to write good code is to communicate and set clear
