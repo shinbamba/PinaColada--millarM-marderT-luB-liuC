@@ -20,7 +20,7 @@ robust.
 collaboration. This will be done by intensively scrutinizing each of our 
 functions to make sure everything could be understood by orangutans.
 
-marderT -- 2018-10-16 21:51
+timM -- 2018-10-16 21:51
 - Completely re-drew the database schema for clearer representation.
 - Added a third table since task was slightly misunderstood at first. Blogs
 now have descriptions and ids in respect to the order of creation. 
