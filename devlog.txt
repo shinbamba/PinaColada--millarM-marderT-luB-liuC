@@ -1,9 +1,34 @@
-DEVLOG
-Pina Colada
+Team Pina Colada
+Tim Marder, Max Millar, Bo Hui Lu, Claire Liu
+SoftDev Pd.6
+P #00: Da Art of Storytellin'
 
-Entry Format:
+====================[ DEVLOG ]====================
 
-topherM -- 1999-12-31 23:59
-*** entry here ***
+PinaColada -- 2018-10-16 21:30
+Things we shall do to make things awesome:
 
-Entries:
+1) Use the simplest code we know of to perform each of our task. This will 
+prevent unnecessary confusion, and help our eyes.
+
+2) Instead of falling for the temptation to just produce code that barely 
+works in that situation, we will make sure to test our code thoroughly. Unlike
+the internet which is barely held together, we will make sure our code will be 
+robust. 
+
+3) We will continue to use and write "Good Code" except ours include team 
+collaboration. This will be done by intensively scrutinizing each of our 
+functions to make sure everything could be understood by orangutans.
+
+marderT -- 2018-10-16 21:51
+- Completely re-drew the database schema for clearer representation.
+- Added a third table since task was slightly misunderstood at first. Blogs
+now have descriptions and ids in respect to the order of creation. 
+- Third table is "Post" and has same columns as "Blog" table with addition of
+post_id to keep track of order of posts and blog_id is used to correctly
+tie posts to their respected blogs.
+- Timestamp column is added to display the time and date of post creation
+near the post title.
+- Added explanations for each table and of their usage.
+
+================================================
