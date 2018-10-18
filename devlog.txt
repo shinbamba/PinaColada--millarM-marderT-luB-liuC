@@ -49,3 +49,8 @@ at the very last minute. Multiple deadlines for smaller tasks is key to make sur
 final version is comprehensive and on time. 
 
 ================================================
+maxM -- 2018-10-7 20:30
+-wrote resetdb.py to create/reset the database file blogger.db, with login table instantiated with test logins
+-began writing main file blog.py, added login and user registration mechanisms with sql integration
+-wrote login.html and register.html, for displaying /login and /register routes with text input
+-added / route with a simple line to show that user is logged in
