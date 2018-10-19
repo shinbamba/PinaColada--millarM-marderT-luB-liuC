@@ -46,11 +46,29 @@ Something else we can do to write good code is to communicate and set clear
 deadlines. The project manager will coordinate and make sure that deadlines for
 each obstacle is established so we aren’t rushing to add all the components together
 at the very last minute. Multiple deadlines for smaller tasks is key to make sure the 
-final version is comprehensive and on time. 
+final version is comprehensive and on time.
 
-================================================
+--------------------------------------------------------------
+
 maxM -- 2018-10-7 20:30
 -wrote resetdb.py to create/reset the database file blogger.db, with login table instantiated with test logins
 -began writing main file blog.py, added login and user registration mechanisms with sql integration
 -wrote login.html and register.html, for displaying /login and /register routes with text input
 -added / route with a simple line to show that user is logged in
+
+--------------------------------------------------------------
+
+claireL -- 2018-10-18 12:31
+Something else we can do to write good code is to communicate and set clear
+deadlines. The project manager will coordinate and make sure that deadlines for
+each obstacle is established so we aren’t rushing to add all the components together
+at the very last minute. Multiple deadlines for smaller tasks is key to make sure the 
+final version is comprehensive and on time.
+
+--------------------------------------------------------------
+
+claireL -- 2018-10-19 12:04
+-Added post and blog table to the database
+-Added time stamp after we saw another group do it (we thought it was cool)
+
+================================================
