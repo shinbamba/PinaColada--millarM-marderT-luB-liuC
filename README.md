@@ -12,6 +12,8 @@ pip install wheel
 
 cd PinaBlog
 
+python3 resetdb.py
+
 python3 blog.py
 
 
