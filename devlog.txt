@@ -50,7 +50,7 @@ final version is comprehensive and on time.
 
 --------------------------------------------------------------
 
-maxM -- 2018-10-7 20:30
+maxM -- 2018-10-17 20:30
 -wrote resetdb.py to create/reset the database file blogger.db, with login table instantiated with test logins
 -began writing main file blog.py, added login and user registration mechanisms with sql integration
 -wrote login.html and register.html, for displaying /login and /register routes with text input
@@ -70,5 +70,24 @@ final version is comprehensive and on time.
 claireL -- 2018-10-19 12:04
 -Added post and blog table to the database
 -Added time stamp after we saw another group do it (we thought it was cool)
+
+-------------------------------------------------------------
+
+timM --2018-10-20 19:34
+- Created the login table in the database.
+- Added column for usernames and passwords.
+- Made python use the database data in order to check for username and password
+of users when logging in. Completed authentication step.
+
+-------------------------------------------------------------
+
+timM --2018-10-21 21:29
+- Forgot to add logout feature last time so worked on that this time.
+- Made sessions work in Flask. (Website now remembers the user if he/she leaves the website
+and comes back without logging out.)
+- Created the /templates folder and created the necessary .html files for the pages.
+- Connected pages to python using flask.
+- Started working on HTML and Jinja Syntax in all necessary pages.
+- Finished basic functionality in the HTML pages.
 
 ================================================
