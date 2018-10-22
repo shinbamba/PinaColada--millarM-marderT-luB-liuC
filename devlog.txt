@@ -90,4 +90,19 @@ and comes back without logging out.)
 - Started working on HTML and Jinja Syntax in all necessary pages.
 - Finished basic functionality in the HTML pages.
 
+-------------------------------------------------------------
+
+boL -- 2018-10-21 (over the course of the day)
+
+-Completed version one of the authentication system using similar code from the previous assignment. Used hardcoded user and password at first.
+-Encountered an issue with using sessions. Realized it was a dumb mistake where I had a typo.
+-Successfully added user account creation using Tim’s database. 
+-Encountered another issue where the user seemed to be able to log in with any combination of password and username, regardless of if it's registered or not. After some debugging, I found that -I mistakenly make the login system add to the database during the checking of whether it's an account. 
+-Finished up version one, with a working authentication and account creation.
+-Added error messages to help the user out.
+-Occasionally encountered error where though a login attempt with incorrect an account will fail the Login, the url changes to displaying the incorrect combo instead of an error message.(unresolved, because it happens very rarely)
+-Have an almost solid Version Two, excluding the rare error mentioned above.
+
+
+
 ================================================
