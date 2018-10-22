@@ -103,6 +103,14 @@ boL -- 2018-10-21 (over the course of the day)
 -Occasionally encountered error where though a login attempt with incorrect an account will fail the Login, the url changes to displaying the incorrect combo instead of an error message.(unresolved, because it happens very rarely)
 -Have an almost solid Version Two, excluding the rare error mentioned above.
 
+-------------------------------------------------------------
 
+claireL -- 2018-10-21 (over the course of the day)
+-On Sunday, we all met up to finish the basic functionality of the project and pushed it all on Max's account.
+-Search/edit functionality works now
+-Some problems include: incorrect flash messages such as flashing "Error, user does not exist" even when the user does exist
+-HTML issues where the code is not organized and there are discrepancies between what is clickable and what isn't. Also the blogs just look really ugly right now.
+-In class, we updated the readme with full instructions. We also realized there was a databse problem where when we run the code there's a sqlite error involving logins and trying to register a new account. This was fixed when we ran the resetdb.py file.
+-Tim will work on fixing up the HTML tonight.
 
 ================================================
