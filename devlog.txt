@@ -113,4 +113,11 @@ claireL -- 2018-10-21 (over the course of the day)
 -In class, we updated the readme with full instructions. We also realized there was a databse problem where when we run the code there's a sqlite error involving logins and trying to register a new account. This was fixed when we ran the resetdb.py file.
 -Tim will work on fixing up the HTML tonight.
 
+-------------------------------------------------------------
+
+claireL -- 2018-10-23 12:20
+-Fixed up the read.me with proper formatting. 
+-Learned that paragraph breaks require two spaces instead of just one and pressing enter.
+-Also learned a bunch of cool syntax rules for editing the readme [Thanks Zane for posting that in the QAF]
+
 ================================================
