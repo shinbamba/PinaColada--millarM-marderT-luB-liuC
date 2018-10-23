@@ -10,7 +10,7 @@ You will need python3 and SQLite3 to run our code.
 
 ## Instructions to Run:
 
-1. Clone this repo by typing 
+1. Clone this repo by typing    
 ```$ git clone git git@github.com:stuymmillar/PinaColada--millarM-marderT-luB-liuC.git ```
 2. Navigate into our directory by typing 
 ```$ cd PinaColada--millarM-marderT-luB-liuC/PinaBlog ```
