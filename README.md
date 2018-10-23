@@ -5,7 +5,7 @@
 #### P #00: Da Art of Storytellin'
 #### 2018-10-01
 
-### Requirements:
+## Requirements:
 You will need python3 and SQLite3 to run our code. 
 
 ## Instructions to Run:
