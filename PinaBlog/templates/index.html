@@ -8,14 +8,33 @@
     </title>
   </head>
   <body>
+   <h3> Explore: </h3>
+      <ul style=" 
+list-style-type:none;
+    float:left; margin:0; padding:0;">
+	<li >
+	  <a href="/mypage"> Home Page </a>
+	</li>
+	<li>
+	  <a href="/add"> Make a New Blog</a>
+	</li>
+	<li> 
+	  <a href="/logout">Logout</a>
+	<li>
+      </ul>
+ 
+      <br>
+      <br>
+          <center>
+ <h2>Welcome, {{username}}!</h2>
     {% block search %}
-        <a href="/mypage"> My Page </a>
+       
 	<form action="/search">
 	  <input type="text" name="query">
 	  <input type="submit" value="Search for a User">
 	</form>
 	{% endblock %}
-    {% with messages = get_flashed_messages() %}
+	{% with messages = get_flashed_messages() %}
     {% if messages %}
     <ul class=flashes>
       {% for message in messages %}
@@ -25,16 +44,31 @@
     {% endif %}
     {% endwith %}
     {% block body %}
-    <h1>Welcome, {{username}}!</h1>
-    <h3>What would you like to do?</h3>
-    <a href="/add"> Make a new blog</a>
-    <p><a href="/logout">Logout</a></P>
-    {% for n in range(length) %}
-    {% set url = "/user/" + users[length - n - 1][0] + "/" + ids[length - n - 1][0]|string %}
-    <h1> <a href={{url}}> {{titles[length - n - 1][0]}} - #{{ids[length - n - 1][0]}} </a> </h1>
-    <h2> By {{users[length - n - 1][0]}} </h2>
-    <h3> {{descriptions[length - n - 1][0]}} </h3>
+    </center>
+
+	  <!--<h3>What would you like to do?</h3> -->
+	  <h3> Blogs: </h3>
+ {% for n in range(length) %}
+ {% set url = "/user/" + users[length - n - 1][0] + "/" + ids[length - n - 1][0]|string %}
+    <table>
+      <td>
+	<h3>
+	  <a href={{url}}> {{titles[length - n - 1][0]}} - #{{ids[length - n - 1][0]}} </a>
+	</h3>
+      </th>
+<td>
+	By {{users[length - n - 1][0]}}
+      </td>
+      <td>
+	{{descriptions[length - n - 1][0]}}
+      </td>
+    </table>
     {% endfor %}
-    {% endblock %}
+   
+  {% endblock %}
+
+   
+    
+ 
   </body>
   </html>
