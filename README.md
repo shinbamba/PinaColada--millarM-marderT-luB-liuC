@@ -1,9 +1,9 @@
 # PinaColada 
-## Members: Max Millar, Tim Marder, Bo Lu, Claire Liu 
-## SoftDev1 pd6
-## P #00: Da Art of Storytellin'
-## 2018-10-01
-# Instructions to Run:
+### Members: Max Millar, Tim Marder, Bo Lu, Claire Liu 
+### SoftDev1 pd6
+### P #00: Da Art of Storytellin'
+### 2018-10-01
+## Instructions to Run:
 
 1. Clone this repo by typing ``` git clone git git@github.com:stuymmillar/PinaColada--millarM-marderT-luB-liuC.git ```
 2. Navigate into our directory by typing ``` cd PinaColada--millarM-marderT-luB-liuC/PinaBlog ```
