@@ -1,20 +1,11 @@
-# PinaColada--millarM-marderT-luB-liuC
-Pina Colada - Max Millar, Tim Marder, Bo Lu, Claire Liu
+# PinaColada-- Max Millar, Tim Marder, Bo Lu, Claire Liu 
+## Instructions to Run:
 
-THIS IS IN PYTHON 3
-
-git clone "url of our github"
-
-cd Pina +Tab
-
-pip install python3
-pip install wheel
-
-cd PinaBlog
-
-python3 resetdb.py
-
-python3 blog.py
-
+1. Clone this repo by typing ''' git clone git git@github.com:stuymmillar/PinaColada--millarM-marderT-luB-liuC.git '''
+2. Navigate into our directory by typing ''' cd PinaColada--millarM-marderT-luB-liuC/PinaBlog '''
+3. Run the database by typing '''python3 resetdb.py'''
+4. Make sure python3 and wheel have been installed. If they haven't, simply type ''' pip install python3''' and '''pip install wheel'''.
+5. Run the python file by typing '''python blog.py'''.
+6. Navigate to http://127.0.0.1:5000/ to view our project!
 
 
