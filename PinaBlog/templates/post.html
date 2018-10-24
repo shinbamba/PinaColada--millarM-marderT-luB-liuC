@@ -4,23 +4,30 @@
       <title>{{title}} - {{post_id}}</title>
     </head>
     <body>
-      <h3>
-	<a href="/"> Home </a>
-	<form action="/search">
-	  <input type="text" name="query">
-	  <input type="submit" value="Search for a User">
-	</form>
-	<a href="/mypage"> My Page </a>
-	<a href="/add"> Make a Blog </a>
-      </h3>
+     <h3> Explore: </h3>
+      <ul style=" 
+list-style-type:none;
+    float:left; margin:0; padding:0;">
+	<li >
+	  <a href="/"> Home </a>
+	</li>
+	<li>
+	  <a href="/add"> Make a New Blog</a>
+	</li>
+	<li> 
+	  <a href="/logout">Logout</a>
+	<li>
+      </ul>
+      <br>
+      <br>
       <h1> {{title}} - #{{post_id}} </h1>
       <p> {{body}} </p>
       <br> {{time}}
       {% if this_user %}
       {% set eurl = "/editpost/" + user + "/" + blog_id + "/" + post_id %}
       {% set durl = "/deletepost/" + user  + "/" + blog_id + "/" + post_id %}
-      <p> <a href={{eurl}}> Edit this post </a> </p>
-      <p> <a href={{durl}}> Delete this post </a> </p>
+      <p> <a href={{eurl}}> Edit this entry </a> </p>
+      <p> <a href={{durl}}> Delete this entry </a> </p>
       {% endif %}
     </body>
 </html>

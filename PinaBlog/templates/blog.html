@@ -4,17 +4,27 @@
       <title>{{title}} - {{blog_id}}</title>
     </head>
     <body>
-      <h3>
-	<a href="/"> Home </a>
-	<form action="/search">
-	  <input type="text" name="query">
-	  <input type="submit" value="Search for a User">
-	</form>
-	<a href="/mypage"> My Page </a>
-	<a href="/add"> Make a Blog </a>
-      </h3>
+      <h3> Explore: </h3>
+      <ul style=" 
+list-style-type:none;
+    float:left; margin:0; padding:0;">
+	<li >
+	  <a href="/"> Home </a>
+	</li>
+	<li>
+	  <a href="/add"> Make a New Blog</a>
+	</li>
+	<li> 
+	  <a href="/logout">Logout</a>
+	<li>
+      </ul>
+      <br>
+      <br>
+      <center>
+     
       <h1> {{title}} - #{{blog_id}} </h1>
       <h3> {{description}} </h3>
+      </center>
       {% for n in range(length) %}
       {% set url = "/user/" + user + "/" + blog_id + "/" + ids[length - n - 1][0]|string %}
       <h1> <a href={{url}}> {{titles[length - n - 1][0]}} - #{{ids[length - n - 1][0]}} </a> </h1>
@@ -25,7 +35,7 @@
       {% set aurl = "/addpost/" + user + "/" + blog_id %}
       {% set eurl = "/edit/" + user + "/" + blog_id %}
       {% set durl = "/delete/" + user  + "/" + blog_id %}
-      <p> <a href={{aurl}}> Make a new post </a> </p>
+      <p> <a href={{aurl}}> Make a new entry </a> </p>
       <p> <a href={{eurl}}> Edit this blog </a> </p>
       <p> <a href={{durl}}> Delete this blog </a> </p>
       {% endif %}
