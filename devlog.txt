@@ -121,3 +121,8 @@ claireL -- 2018-10-23 12:20
 -Also learned a bunch of cool syntax rules for editing the readme [Thanks Zane for posting that in the QAF]
 
 ================================================
+
+boL -- 2018-10-24 11:50
+-Added more to read.me to comply with what Mr.Brown mentioned in class.
+-Learned about ability to use dictionarys in jinja(from Kevin Lin's post)
+-Helped fix a little html for clarity
