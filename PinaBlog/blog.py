@@ -52,7 +52,7 @@ def login():
         return redirect("/")
     return render_template("login.html")
 
-d
+
 @app.route('/auth')
 def authenticate():
     errors = False
