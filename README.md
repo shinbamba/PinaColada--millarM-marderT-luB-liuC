@@ -6,7 +6,8 @@
 #### 2018-10-01
 
 ## Requirements:
-You will need python3 and SQLite3 to run our code. 
+You will need python3 and SQLite3 to run our code.
+You may also need sudo access.
 
 ## Instructions to Run:
 
