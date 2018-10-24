@@ -134,6 +134,10 @@ def dispUser(user):
     try:
         db = sqlite3.connect(DB_FILE)
         c = db.cursor()
+        c.execute("SELECT password FROM login WHERE username='" + str(user) + "';")
+        if c.fetchall() == []:
+            flash("Error, user does not exist.")
+            return redirect("/")
         # print(user)
         # print("SELECT title FROM blog where username='" + user + "';")
         c.execute("SELECT blog_title FROM blog where username='" + str(user) + "';")
@@ -144,9 +148,6 @@ def dispUser(user):
         ids = c.fetchall()
         db.commit()
         db.close()
-        if titles == [] or descriptions == [] or ids == []:
-            flash("Error, user does not exist.")
-            return redirect("/")
         print(descriptions)
         length = len(descriptions)
         return render_template("user.html", titles=titles, descriptions=descriptions, ids=ids, length=length, user=user)
