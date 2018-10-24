@@ -115,14 +115,32 @@ claireL -- 2018-10-21 (over the course of the day)
 
 -------------------------------------------------------------
 
+boL -- 2018-10-22
+-Updated read.me to include the directions for necessary commands to run our code
+
+-------------------------------------------------------------
+
+maxM -- 2018-10-22
+-Updated the main code with what we worked on over the weekend
+
+
+
+
+-------------------------------------------------------------
+
 claireL -- 2018-10-23 12:20
 -Fixed up the read.me with proper formatting. 
 -Learned that paragraph breaks require two spaces instead of just one and pressing enter.
 -Also learned a bunch of cool syntax rules for editing the readme [Thanks Zane for posting that in the QAF]
 
-================================================
+
+-------------------------------------------------------------
 
 boL -- 2018-10-24 11:50
 -Added more to read.me to comply with what Mr.Brown mentioned in class.
 -Learned about ability to use dictionarys in jinja(from Kevin Lin's post)
 -Helped fix a little html for clarity
+
+
+================================================
+
