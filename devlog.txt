@@ -7,14 +7,14 @@ P #00: Da Art of Storytellin'
 
 PinaColada -- 2018-10-16 21:30
 Things we shall do to make things awesome:
-1) Use the simplest code we know of to perform each of our task. This will 
+1) Use the simplest code we know of to perform each of our task. This will
 prevent unnecessary confusion, and help our eyes.
-2) Instead of falling for the temptation to just produce code that barely 
+2) Instead of falling for the temptation to just produce code that barely
 works in that situation, we will make sure to test our code thoroughly. Unlike
-the internet which is barely held together, we will make sure our code will be 
-robust. 
-3) We will continue to use and write "Good Code" except ours include team 
-collaboration. This will be done by intensively scrutinizing each of our 
+the internet which is barely held together, we will make sure our code will be
+robust.
+3) We will continue to use and write "Good Code" except ours include team
+collaboration. This will be done by intensively scrutinizing each of our
 functions to make sure everything could be understood by orangutans.
 
 --------------------------------------------------------------
@@ -22,7 +22,7 @@ functions to make sure everything could be understood by orangutans.
 timM -- 2018-10-16 21:51
 - Completely re-drew the database schema for clearer representation.
 - Added a third table since task was slightly misunderstood at first. Blogs
-now have descriptions and ids in respect to the order of creation. 
+now have descriptions and ids in respect to the order of creation.
 - Third table is "Post" and has same columns as "Blog" table with addition of
 post_id to keep track of order of posts and blog_id is used to correctly
 tie posts to their respected blogs.
@@ -36,8 +36,8 @@ boL -- 2018-10-16 21:55
 -fixed wording on what we meant when referencing tables
 -changed search to search/view to better reflect what the component does
 -removed the bit about sqlite databases, because it doesn't belong in components
--explained the displaying posts part 
--removed line referencing the need to be logged in because its redundant 
+-explained the displaying posts part
+-removed line referencing the need to be logged in because its redundant
 
 --------------------------------------------------------------
 
@@ -45,7 +45,7 @@ claireL -- 2018-10-16 23:55
 Something else we can do to write good code is to communicate and set clear
 deadlines. The project manager will coordinate and make sure that deadlines for
 each obstacle is established so we aren’t rushing to add all the components together
-at the very last minute. Multiple deadlines for smaller tasks is key to make sure the 
+at the very last minute. Multiple deadlines for smaller tasks is key to make sure the
 final version is comprehensive and on time.
 
 --------------------------------------------------------------
@@ -62,7 +62,7 @@ claireL -- 2018-10-18 12:31
 Something else we can do to write good code is to communicate and set clear
 deadlines. The project manager will coordinate and make sure that deadlines for
 each obstacle is established so we aren’t rushing to add all the components together
-at the very last minute. Multiple deadlines for smaller tasks is key to make sure the 
+at the very last minute. Multiple deadlines for smaller tasks is key to make sure the
 final version is comprehensive and on time.
 
 --------------------------------------------------------------
@@ -94,13 +94,19 @@ and comes back without logging out.)
 
 boL -- 2018-10-21 (over the course of the day)
 
--Completed version one of the authentication system using similar code from the previous assignment. Used hardcoded user and password at first.
+-Completed version one of the authentication system using similar code from the previous
+assignment. Used hardcoded user and password at first.
 -Encountered an issue with using sessions. Realized it was a dumb mistake where I had a typo.
--Successfully added user account creation using Tim’s database. 
--Encountered another issue where the user seemed to be able to log in with any combination of password and username, regardless of if it's registered or not. After some debugging, I found that -I mistakenly make the login system add to the database during the checking of whether it's an account. 
+-Successfully added user account creation using Tim’s database.
+-Encountered another issue where the user seemed to be able to log in with any combination
+of password and username, regardless of if it's registered or not. After some debugging, I
+found that -I mistakenly make the login system add to the database during the checking of
+whether it's an account.
 -Finished up version one, with a working authentication and account creation.
 -Added error messages to help the user out.
--Occasionally encountered error where though a login attempt with incorrect an account will fail the Login, the url changes to displaying the incorrect combo instead of an error message.(unresolved, because it happens very rarely)
+-Occasionally encountered error where though a login attempt with incorrect an account will
+fail the Login, the URL changes to displaying the incorrect combo instead of an error message.
+(unresolved, because it happens very rarely)
 -Have an almost solid Version Two, excluding the rare error mentioned above.
 
 -------------------------------------------------------------
@@ -110,7 +116,7 @@ claireL -- 2018-10-21 (over the course of the day)
 -Search/edit functionality works now
 -Some problems include: incorrect flash messages such as flashing "Error, user does not exist" even when the user does exist
 -HTML issues where the code is not organized and there are discrepancies between what is clickable and what isn't. Also the blogs just look really ugly right now.
--In class, we updated the readme with full instructions. We also realized there was a databse problem where when we run the code there's a sqlite error involving logins and trying to register a new account. This was fixed when we ran the resetdb.py file.
+-In class, we updated the readme with full instructions. We also realized there was a database problem where when we run the code there's a sqlite error involving logins and trying to register a new account. This was fixed when we ran the resetdb.py file.
 -Tim will work on fixing up the HTML tonight.
 
 -------------------------------------------------------------
@@ -123,24 +129,25 @@ boL -- 2018-10-22
 maxM -- 2018-10-22
 -Updated the main code with what we worked on over the weekend
 
-
-
-
 -------------------------------------------------------------
 
 claireL -- 2018-10-23 12:20
--Fixed up the read.me with proper formatting. 
+-Fixed up the read.me with proper formatting.
 -Learned that paragraph breaks require two spaces instead of just one and pressing enter.
 -Also learned a bunch of cool syntax rules for editing the readme [Thanks Zane for posting that in the QAF]
-
 
 -------------------------------------------------------------
 
 boL -- 2018-10-24 11:50
--Added more to read.me to comply with what Mr.Brown mentioned in class.
--Learned about ability to use dictionarys in jinja(from Kevin Lin's post)
+-Added more to read.me to comply with what Mr. Brown mentioned in class.
+-Learned about ability to use dictionaries in jinja(from Kevin Lin's post)
 -Helped fix a little html for clarity
 
+-------------------------------------------------------------
+
+timM -- 2018-10-24 11:50
+- Played around with the database executed commands in python to find the most
+robust way to get data from database/put data into database.
+- Helped Max fix a bug with flashing in flask. 
 
 ================================================
-
