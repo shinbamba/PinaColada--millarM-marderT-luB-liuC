@@ -33,9 +33,9 @@ list-style-type:none;
 	</center>
       
       {% for n in range(length) %}
-      {% set url = "/user/" + user + "/" + ids[n][0]|string %}
-      <h1> <a href={{url}}> {{titles[n][0]}} - #{{ids[n][0]}} </a> </h1>
-      <h3> {{descriptions[n][0]}} </h3>
+      {% set url = "/user/" + user + "/" + ids[length - n - 1][0]|string %}
+      <h1> <a href={{url}}> {{titles[length - n - 1][0]}} - #{{ids[length - n - 1][0]}} </a> </h1>
+      <h3> {{descriptions[length - n - 1][0]}} </h3>
       {% endfor %}
     </body>
 </html>

@@ -32,16 +32,14 @@ def render_test():
     ids = c.fetchall()
     c.execute("SELECT username FROM blog;")
     users = c.fetchall()
+    c.execute("SELECT category FROM blog;")
+    categories = c.fetchall()
     db.commit()
     db.close()
     # print(bodies)
     length = len(descriptions)
     return render_template("index.html", username=username, titles=titles, descriptions=descriptions, ids=ids,
-                           length=length, users=users)
-    '''except:
-        flash("Big error.")
-        return redirect("/")
-    '''
+                           length=length, users=users, categories=categories)
 
 
 @app.route('/login')
@@ -107,6 +105,9 @@ def makereg():
     u_pass = request.args.get("password")
     if u_name == None or u_pass == None:
         return redirect("/")
+    elif "'" in u_name or '"' in u_name or "'" in u_pass or '"' in u_pass:
+        flash("No special characters allowed.")
+        return redirect("/login")
     db = sqlite3.connect(DB_FILE)
     c = db.cursor()
     c.execute("SELECT username FROM login WHERE username='" + str(u_name) + "';")
@@ -275,6 +276,8 @@ def makeEditBlog(user, blog_id):
     if ncategory == None or ndescription == None or ntitle == None:
         flash("You weren't supossed to be here.")
         return redirect("/")
+    ntitle = ntitle.replace("'", "''")
+    ndescription = ndescription.replace("'", "''")
     try:
         db = sqlite3.connect(DB_FILE)
         c = db.cursor()
@@ -329,6 +332,8 @@ def makeEditPost(user, blog_id, post_id):
     if nbody == None or ntitle == None:
         flash("You weren't supossed to be here.")
         return redirect("/")
+    ntitle = ntitle.replace("'", "''")
+    nbody = nbody.replace("'", "''")
     try:
         db = sqlite3.connect(DB_FILE)
         c = db.cursor()
@@ -375,6 +380,8 @@ def addNew():
         # print(blog_id)
     except:
         blog_id = 1
+    title = title.replace("'", "''")
+    ndescription = ndescription.replace("'", "''")
     c.execute("INSERT INTO blog VALUES('" + str(user) + "', '" + str(category) + "', '" + str(title) + "', '" + str(
         ndescription) + "', " + str(blog_id) + ");")
     db.commit()
@@ -410,6 +417,8 @@ def addNewPost(user, blog_id):
         post_id = (post_id[len(post_id) - 1][0] + 1)
     except:
         post_id = 1
+    title = title.replace("'", "''")
+    nbody = nbody.replace("'", "''")
     c.execute("INSERT INTO post VALUES('" + str(user) + "', '" + str(title) + "', '" + str(
         nbody) + "', " + str(blog_id) + ", " + str(post_id) + ", " + "CURRENT_TIMESTAMP);")
     db.commit()
