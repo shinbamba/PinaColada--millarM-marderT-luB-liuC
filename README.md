@@ -22,10 +22,12 @@ $ cd PinaColada--millarM-marderT-luB-liuC/PinaBlog
 3. Activate your virtual environment. Create one by typing    
 ``` 
 $ python3 -m venv PC      
-$ .PC/bin/activate ```
+$ .PC/bin/activate 
+```
 4. Make sure python3 and wheel have been installed. If they haven't, simply type   
 ```(PC) $ pip install python3  
-(PC) $ pip install wheel```   
+(PC) $ pip install wheel
+```   
 5. Run the database by typing  
 ```(PC) $ python3 resetdb.py```   
 6. Run the python file by typing    
