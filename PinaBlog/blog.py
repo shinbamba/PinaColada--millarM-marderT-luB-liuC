@@ -105,8 +105,8 @@ def makereg():
     u_pass = request.args.get("password")
     if u_name == None or u_pass == None:
         return redirect("/")
-    elif "'" in u_name or '"' in u_name or "'" in u_pass or '"' in u_pass:
-        flash("No special characters allowed.")
+    elif "'" in u_name or '"' in u_name or "'" in u_pass or '"' in u_pass or " " in u_name or " " in u_pass:
+        flash("No special characters or spaces allowed.")
         return redirect("/login")
     db = sqlite3.connect(DB_FILE)
     c = db.cursor()
