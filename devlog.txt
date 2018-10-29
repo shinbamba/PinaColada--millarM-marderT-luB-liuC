@@ -165,10 +165,6 @@ boL -- 2018-10-25 12:27
 
 -------------------------------------------------------------
 
-maxM -- 2018-10-25 12:27
-
--------------------------------------------------------------
-
 claireL -- 2018-10-25 12:27
 - Found issue where ' breaks code when making new blog post
 
@@ -178,5 +174,16 @@ boL -- 2018-10-27 7:33
 -Updated the design doc to better match our current design.
 
 -------------------------------------------------------------
+
+maxM -- 2018-10-28 5:23
+-Added categories such as tech/fashion/etc. 
+-Displayed category next to each blog post
+-Fixed issue where adding apostrophies or quotes would break a blog post
+
+-------------------------------------------------------------
+
+claireL -- 2018-10-28 10:29
+-pushed design doc (updated version)
+-fixed the readme so that the code blocks looked clearer
 
 ================================================
