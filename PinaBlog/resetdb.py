@@ -17,7 +17,7 @@ def resetTable():
         c.execute("INSERT INTO login VALUES('john', 'doe')")
         c.execute("INSERT INTO login VALUES('jane', 'doe')")
         c.execute("INSERT INTO blog VALUES('john', 'Sports', 'Test Blog', 'TEST BLOG', 1)")
-        c.execute("INSERT INTO blog VALUES('jane', 'Other', 'Other Test Blog', 'RANDOM BLOG', 1)")
+        c.execute("INSERT INTO blog VALUES('jane', 'Other', 'Other Test Blog', 'TEST BLOG', 1)")
         c.execute("INSERT INTO post VALUES('john', 'Test Post', 'TEST POST', 1, 1, CURRENT_TIMESTAMP)")
         c.execute("INSERT INTO post VALUES('jane', 'Other Test Post', 'TEST POST', 1, 1, CURRENT_TIMESTAMP)")
     except:
@@ -27,7 +27,7 @@ def resetTable():
         c.execute("INSERT INTO login VALUES('john', 'doe')")
         c.execute("INSERT INTO login VALUES('jane', 'doe')")
         c.execute("INSERT INTO blog VALUES('john', 'Sports', 'Test Blog', 'TEST BLOG', 1)")
-        c.execute("INSERT INTO blog VALUES('jane', 'Other', 'Other Test Blog', 'RANDOM BLOG', 1)")
+        c.execute("INSERT INTO blog VALUES('jane', 'Other', 'Other Test Blog', 'TEST BLOG', 1)")
         c.execute("INSERT INTO post VALUES('john', 'Test Post', 'TEST POST', 1, 1, CURRENT_TIMESTAMP)")
         c.execute("INSERT INTO post VALUES('jane', 'Other Test Post', 'TEST POST', 1, 1, CURRENT_TIMESTAMP)")
         
