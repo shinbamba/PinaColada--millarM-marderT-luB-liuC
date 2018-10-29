@@ -29,11 +29,17 @@ $ .PC/bin/activate
 (PC) $ pip install wheel
 ```   
 5. Run the database by typing  
-```(PC) $ python3 resetdb.py```   
+``` 
+(PC) $ python3 resetdb.py 
+```   
 6. Run the python file by typing    
-```(PC) $ python blog.py```   
+``` 
+(PC) $ python blog.py 
+```   
 7. Navigate to http://127.0.0.1:5000/ to view our project.
 8. Make sure to exit your virtual environment by typing   
-```$ deactivate ```
+``` 
+$ deactivate  
+```
 
 
