@@ -27,8 +27,8 @@ list-style-type:none;
       </center>
       {% for n in range(length) %}
       {% set url = "/user/" + user + "/" + blog_id + "/" + ids[length - n - 1][0]|string %}
-      <h1> <a href={{url}}> {{titles[length - n - 1][0]}} - #{{ids[length - n - 1][0]}} </a> </h1>
-      <h3> {{bodies[length - n - 1][0]}} </h3>
+      <h3> <a href={{url}}> {{titles[length - n - 1][0]}} - #{{ids[length - n - 1][0]}} </a> </h3>
+      <h4> {{bodies[length - n - 1][0]}} </h4>
       <br> {{times[length - n - 1][0]}}
       {% endfor %}
       {% if this_user %}
