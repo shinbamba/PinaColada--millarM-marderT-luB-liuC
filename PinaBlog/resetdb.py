@@ -25,7 +25,7 @@ def resetTable():
         c.execute("CREATE TABLE blog(username TEXT, category TEXT, blog_title TEXT, description TEXT, blog_id INTEGER)")
         c.execute("CREATE TABLE post(username TEXT, post_title TEXT, body TEXT, blog_id INTEGER, post_id INTEGER, timestamp DATETIME)")
         c.execute("INSERT INTO login VALUES('John', 'Doe')")
-        c.execute("INSERT INTO login VALUES('jane', 'Doe')")
+        c.execute("INSERT INTO login VALUES('Jane', 'Doe')")
         c.execute("INSERT INTO blog VALUES('John', 'Sports', 'Test Blog', 'TEST BLOG', 1)")
         c.execute("INSERT INTO blog VALUES('Jane', 'Fashion', 'Other Test Blog', 'TEST BLOG', 1)")
         c.execute("INSERT INTO post VALUES('John', 'Test Post', 'TEST POST', 1, 1, CURRENT_TIMESTAMP)")
